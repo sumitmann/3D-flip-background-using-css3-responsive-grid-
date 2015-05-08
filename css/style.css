@@ -1,15 +1,26 @@
 body,html{margin:0;padding:0;}
 .flipwrap{width:100%;overflow:hidden;border-bottom:30px #f5f5f5 solid;}
 .flipwrap:after{content:'';clear:both;display:block;}
-.flipwrap .flipblock{float:left;position:relative;perspective:1100px;background:#e5e5e5;display:block;text-decoration:none;}
+.flipwrap .flipblock{float:left;position:relative;perspective:1100px;background:#fff;display:block;text-decoration:none;}
 .flipwrap.col4 .flipblock{width:25%;}
 .flipwrap.col3 .flipblock{width:33.33333%}
 .flipwrap.col2 .flipblock{width:50%;}
 .flipwrap .flipblock img{z-index:-1;width:100%;display:block;transform-style: preserve-3d;transition: all 0.5s;  -moz-transition: all 0.5s;-ms-transition: all 0.5s;-webkit-transition: all 0.5s;display:block;margin:0;border:0;}
+.flipwrap .flipblock:before{content:'';width:0%;height:0%;left:50%;top:50%;background:#4a2c25;opacity:0;filter:alpha(opacity=0);;transition:all 0.5s ease;position:absolute;}
+  .flipwrap .flipblock:hover:before{opacity:0.4;filter:alpha(opacity=40);top:0;left:0;height:100%;width:100%;}
 .flipwrap.flipbottom .flipblock:hover img{transform: rotateX(80deg);-ms-transform: rotateX(80deg);-moz-transform: rotateX(80deg);-webkit-transform: rotateX(80deg);transform-origin: bottom;-ms-transform-origin: bottom;-moz-transform-origin: bottom;-webkit-transform-origin: bottom;}
 .flipwrap.flipleft .flipblock:hover img{transform: rotateY(80deg);-ms-transform: rotateY(80deg);-moz-transform: rotateY(80deg);-webkit-transform: rotateY(80deg);transform-origin: left;-ms-transform-origin: left;-moz-transform-origin: left;-webkit-transform-origin: left;}	
 .flipwrap.flipright .flipblock:hover img{transform: rotateY(-80deg);-ms-transform: rotateY(-80deg);-moz-transform: rotateY(-80deg);-webkit-transform: rotateY(-80deg);transform-origin: right;-ms-transform-origin: right;-moz-transform-origin: right;-webkit-transform-origin: right;}	
 .flipwrap.fliptop .flipblock:hover img{transform: rotateX(-80deg);-ms-transform: rotateX(-80deg);-moz-transform: rotateX(-80deg);-webkit-transform: rotateX(-80deg);transform-origin: top;-ms-transform-origin: top;-moz-transform-origin: top;-webkit-transform-origin: top;}	
+.flipwrap .flipblock .linkicon{position:absolute;width:50px;height:50px;background:#454545 url(../../../gallery/images/icon.png) no-repeat center center;border-radius:50px;-webkit-border-radius:50px;-moz-border-radius:50px;-o-border-radius:50px;opacity:0;transition:all 0.5s ease;}
+.flipwrap.flipbottom .flipblock .linkicon{left:50%;top:-50px;margin-left:-25px;}
+.flipwrap.flipbottom .flipblock:hover .linkicon{top:50%;opacity:1;margin-top:-25px;}
+.flipwrap.fliptop .flipblock .linkicon{left:50%;bottom:-50px;margin-left:-25px;}
+.flipwrap.fliptop .flipblock:hover .linkicon{bottom:50%;opacity:1;margin-bottom:-25px;}
+.flipwrap.flipright .flipblock .linkicon{left:0%;top:50%;margin-top:-25px;}
+.flipwrap.flipright .flipblock:hover .linkicon{left:50%;margin-left:-25px;opacity:1;}
+.flipwrap.flipleft .flipblock .linkicon{right:0%;top:50%;margin-top:-25px;}
+.flipwrap.flipleft .flipblock:hover .linkicon{right:50%;margin-right:-25px;opacity:1;}
 @media screen and (max-width:780px) {
 .flipwrap.col4 .flipblock, .flipwrap.col3 .flipblock{width:50%;}
 }
