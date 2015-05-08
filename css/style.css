@@ -12,7 +12,7 @@ body,html{margin:0;padding:0;}
 .flipwrap.flipleft .flipblock:hover img{transform: rotateY(80deg);-ms-transform: rotateY(80deg);-moz-transform: rotateY(80deg);-webkit-transform: rotateY(80deg);transform-origin: left;-ms-transform-origin: left;-moz-transform-origin: left;-webkit-transform-origin: left;}	
 .flipwrap.flipright .flipblock:hover img{transform: rotateY(-80deg);-ms-transform: rotateY(-80deg);-moz-transform: rotateY(-80deg);-webkit-transform: rotateY(-80deg);transform-origin: right;-ms-transform-origin: right;-moz-transform-origin: right;-webkit-transform-origin: right;}	
 .flipwrap.fliptop .flipblock:hover img{transform: rotateX(-80deg);-ms-transform: rotateX(-80deg);-moz-transform: rotateX(-80deg);-webkit-transform: rotateX(-80deg);transform-origin: top;-ms-transform-origin: top;-moz-transform-origin: top;-webkit-transform-origin: top;}	
-.flipwrap .flipblock .linkicon{position:absolute;width:50px;height:50px;background:#454545 url(../../../gallery/images/icon.png) no-repeat center center;border-radius:50px;-webkit-border-radius:50px;-moz-border-radius:50px;-o-border-radius:50px;opacity:0;transition:all 0.5s ease;}
+.flipwrap .flipblock .linkicon{position:absolute;width:50px;height:50px;background:#454545 url(../images/icon.png) no-repeat center center;border-radius:50px;-webkit-border-radius:50px;-moz-border-radius:50px;-o-border-radius:50px;opacity:0;transition:all 0.5s ease;}
 .flipwrap.flipbottom .flipblock .linkicon{left:50%;top:-50px;margin-left:-25px;}
 .flipwrap.flipbottom .flipblock:hover .linkicon{top:50%;opacity:1;margin-top:-25px;}
 .flipwrap.fliptop .flipblock .linkicon{left:50%;bottom:-50px;margin-left:-25px;}
